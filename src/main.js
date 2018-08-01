@@ -19,6 +19,20 @@ import './lib/mui/fonts/mui.ttf'
 import './lib/mui/fonts/mui-icons-extra.ttf'
 Vue.config.productionTip = false
 
+//引入vant的tab组件
+import { Tab, Tabs } from 'vant';
+import 'vant/lib/vant-css/base.css';
+import 'vant/lib/vant-css/button.css';
+Vue.use(Tab).use(Tabs);
+
+//懒加载 组件
+import { Lazyload } from 'vant';
+// options 为可选参数，无则不传
+Vue.use(Lazyload,{
+  lazyComponent: true
+});
+
+
 //引入resource 
 import vueresouce from 'vue-resource'
 Vue.use(vueresouce)
