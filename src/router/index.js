@@ -18,6 +18,9 @@ import Email from '../MuiComponents/tabbles/Email'
 import Newslist from "../MuiComponents/Newslist"
 import newspage from "../MuiComponents/News"
 import sharepic from "../MuiComponents/sharepic"
+import picinfo from "../MuiComponents/picinfo"
+
+
 
 // 4. 实例化路由并配置路由规则  
 export default new Router({
@@ -29,7 +32,8 @@ export default new Router({
     { path: '/Email',component:Email},
     { path: '/Home/Newslist',component:Newslist},
     { path: '/Home/Newslist/News/:id',component:newspage},
-    { path: '/Home/sharepic',component:sharepic}
+    { path: '/Home/sharepic',component:sharepic},
+    { path: '/Home/sharepic/picinfo/:id',component:picinfo}
   ],
   linkActiveClass: ' mui-active'
 })

@@ -32,6 +32,18 @@ Vue.use(Lazyload,{
   lazyComponent: true
 });
 
+//引入缩略图的组件
+// import Vant from 'vant';
+import 'vant/lib/vant-css/index.css';
+import 'vant/lib/vant.min.js'
+// Vue.use(Vant);
+
+
+
+
+
+
+
 
 //引入resource 
 import vueresouce from 'vue-resource'

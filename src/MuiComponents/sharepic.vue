@@ -8,11 +8,11 @@
  
   </van-tabs>
     <lazy-component>
-      <div v-for="item in picmsg" :key="item.id">
+      <router-link v-for="item in picmsg" :key="item.id" tag="div" :to="'/Home/sharepic/picinfo/'+item.id">
         <img v-lazy="item.img_url" >
         <h4>{{ item.title }}</h4>
         <p>{{ item.zhaiyao }}</p>
-      </div>
+      </router-link>
     </lazy-component>
   </div>
 </template>
